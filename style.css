@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 150px;
+    height: auto;
+    margin-top: 35px;
+    margin-left: 130px ;
+}
+.menu-nav{
+    background-color: black;
+    gap: 20px;
+    display:flex;
+    justify-content: center;
+}
+.menu-nav a:link{
+    display: block;
+    color: black;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+.menu-nav a:hover{
+    color: white;
+    background-color: grey;
+}
