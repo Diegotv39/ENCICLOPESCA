@@ -1,27 +1,124 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo{
-    width: 150px;
-    height: auto;
-    margin-top: 35px;
-    margin-left: 130px ;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #efefef;
 }
-.menu-nav{
-    background-color: black;
-    gap: 20px;
-    display:flex;
-    justify-content: center;
+
+/* Cabeçalho */
+.header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+  padding: 50px 60px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
-.menu-nav a:link{
-    display: block;
-    color: black;
-    padding: 14px 30px;
-    text-decoration: none;
+
+/* Logo */
+.logo img {
+  height: 60px; /* ajuste conforme o tamanho do seu logo */
+  width: auto;
 }
-.menu-nav a:hover{
-    color: white;
-    background-color: grey;
+
+/* Menu de navegação */
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #606060;
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #1d3d8f;
+}
+
+/* Conteúdo principal */
+.content {
+  height: 80vh;
+  background-color: #efefef;
+  padding: 40px 60px;
+}
+header {
+  position: sticky;    /* gruda no topo quando chega lá */
+  top: 0;
+  background: #222;
+  color: #fff;
+  padding: 20px 40px;
+  z-index: 1000;
+}
+.carrossel {
+  width: 98%;              /* ocupa quase toda a largura da tela */
+  max-width: none;         /* remove limite de largura */
+  height: 380px;           /* altura aumentada */
+  margin: 10px auto;       /* pequena margem */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+/* Área onde as imagens rodam */
+.slides {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  animation: slide 16s infinite;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* mantém o foco da imagem sem distorcer */
+}
+
+/* Animação automática */
+@keyframes slide {
+  0% { margin-left: 0; }
+  20% { margin-left: 0; }
+
+  25% { margin-left: -100%; }
+  45% { margin-left: -100%; }
+
+  50% { margin-left: -200%; }
+  70% { margin-left: -200%; }
+
+  75% { margin-left: -300%; }
+  95% { margin-left: -300%; }
+
+  100% { margin-left: 0; }
+}
+
+/* Indicadores (bolinhas) */
+.indicadores {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.indicadores div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.6);
+}
+.texto{
+  width: 940px;           /* largura máxima */
+  margin: 60px auto;      /* centraliza horizontalmente */
+  text-align: center;     /* centraliza o texto */
+  color: #222;            /* cor do texto */
 }
