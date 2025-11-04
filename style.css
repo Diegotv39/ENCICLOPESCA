@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
+  background-color: #fefefe;
 }
 
 /* Cabeçalho */
@@ -47,7 +47,7 @@ body {
 /* Conteúdo principal */
 .content {
   height: 80vh;
-  background-color: #f7f7f7;
+  background-color: #fefefe;
   padding: 40px 60px;
 }
 header {
@@ -124,7 +124,7 @@ header {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #faf5f5;
+  background-color: #fefefe;
   padding: 40px 60px;
 }
 
@@ -151,7 +151,7 @@ header {
 }
 
 .Baner .caixa {
-  width: 55%; /* caixa um pouco maior */
+  width: 80%; /* caixa um pouco maior */
   height: 200px;
   background-color: #ffffff;
   border-radius: 12px;
