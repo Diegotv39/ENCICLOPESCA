@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #efefef;
+  background-color: #f7f7f7;
 }
 
 /* Cabeçalho */
@@ -47,7 +47,7 @@ body {
 /* Conteúdo principal */
 .content {
   height: 80vh;
-  background-color: #efefef;
+  background-color: #f7f7f7;
   padding: 40px 60px;
 }
 header {
@@ -58,13 +58,11 @@ header {
   padding: 20px 40px;
   z-index: 1000;
 }
-.carrossel {
-  width: 98%;              /* ocupa quase toda a largura da tela */
+.carrossel {          
   max-width: none;         /* remove limite de largura */
-  height: 380px;           /* altura aumentada */
+  height: 450px;           /* altura aumentada */
   margin: 10px auto;       /* pequena margem */
   overflow: hidden;
-  border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   position: relative;
 }
@@ -121,4 +119,41 @@ header {
   margin: 60px auto;      /* centraliza horizontalmente */
   text-align: center;     /* centraliza o texto */
   color: #222;            /* cor do texto */
+}
+.Baner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #faf5f5;
+  padding: 40px 60px;
+}
+
+.Baner h2 {
+  text-align: center;
+  font-size: 22px;
+  color: #111;
+  margin-bottom: 40px;
+}
+
+.Baner .conteudo {
+  display: flex;
+  align-items: center; /* alinha imagem e caixa na mesma altura */
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+.Baner img {
+  width: 320px;
+  height: 200px; /* altura igual à caixa */
+  object-fit: cover; /* evita distorção */
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+.Baner .caixa {
+  width: 55%; /* caixa um pouco maior */
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
